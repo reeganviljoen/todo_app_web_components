@@ -1,4 +1,4 @@
-export default class TodoItemForm extends HTMLElement {
+export default class TodoItemFormComponent extends HTMLElement {
   constructor() {
       super();
   }
@@ -14,6 +14,10 @@ export default class TodoItemForm extends HTMLElement {
     formElement.innerHTML = this.formHTML();
 
     this.shadowRoot.append(formElement)
+  }
+
+  createTodo(){
+
   }
 
   formHTML() {
